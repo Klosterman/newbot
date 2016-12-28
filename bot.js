@@ -1,5 +1,5 @@
 var HTTPS = require('https');
-var rules = "heck";
+var rules = require('./rules.txt');
 
 var botID = process.env.BOT_ID;
 
@@ -21,7 +21,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = rules();
+  botResponse = rules;
 
   options = {
     hostname: 'api.groupme.com',
@@ -30,8 +30,8 @@ function postMessage() {
   };
 
   body = {
-    "bot_id" : botID,
-    "text" : "heck"
+    "bot_id" : 4873f2b03e7024a03347846565,
+    "text" : rules,
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
