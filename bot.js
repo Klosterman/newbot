@@ -30,7 +30,7 @@ function postMessage() {
   };
 
   body = {
-    "bot_id" : 4873f2b03e7024a03347846565,
+    "bot_id" : "4873f2b03e7024a03347846565",
     "text" : rules,
   };
 
